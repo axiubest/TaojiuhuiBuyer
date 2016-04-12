@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A216g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cMO-yi-jwK" customClass="FillInOrderRow1TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cMO-yi-jwK" id="h5f-Ur-Eco">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="commodity" translatesAutoresizingMaskIntoConstraints="NO" id="8pC-Le-qed">
+                        <rect key="frame" x="0.0" y="8" width="68" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="OIx-SV-new"/>
+                            <constraint firstAttribute="width" constant="68" id="lHT-KA-MKO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="53°茅台飞天 500ml" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gH1-cs-3DX">
+                        <rect key="frame" x="76" y="8" width="236" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="YTQ-kb-Um4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="￥100.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FlR-zO-ahU">
+                        <rect key="frame" x="76" y="29" width="236" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gH1-cs-3DX" firstAttribute="leading" secondItem="8pC-Le-qed" secondAttribute="trailing" constant="8" id="L64-LG-PL3"/>
+                    <constraint firstItem="8pC-Le-qed" firstAttribute="centerY" secondItem="h5f-Ur-Eco" secondAttribute="centerY" id="RLc-xb-Qve"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FlR-zO-ahU" secondAttribute="trailing" id="aVu-FA-F8E"/>
+                    <constraint firstItem="8pC-Le-qed" firstAttribute="leading" secondItem="h5f-Ur-Eco" secondAttribute="leadingMargin" constant="-8" id="fCb-EN-ju5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gH1-cs-3DX" secondAttribute="trailing" id="gen-z2-XbD"/>
+                    <constraint firstItem="FlR-zO-ahU" firstAttribute="centerY" secondItem="h5f-Ur-Eco" secondAttribute="centerY" id="glf-yL-y0f"/>
+                    <constraint firstItem="gH1-cs-3DX" firstAttribute="top" secondItem="8pC-Le-qed" secondAttribute="top" id="ldG-tM-Iq6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="8pC-Le-qed" id="sFh-vH-YWf"/>
+                <outlet property="infoLbl" destination="gH1-cs-3DX" id="IAR-ow-mJJ"/>
+                <outlet property="priceLbl" destination="FlR-zO-ahU" id="Viv-0M-W6M"/>
+            </connections>
+            <point key="canvasLocation" x="212" y="191"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="commodity" width="230" height="231"/>
+    </resources>
+</document>

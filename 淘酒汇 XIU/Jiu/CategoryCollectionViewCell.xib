@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="122"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="122"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7sw-dH-eNh">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="88"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="88" id="vOT-R1-JQd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7g-bu-cau">
+                        <rect key="frame" x="0.0" y="88" width="80" height="34"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="D0H-2w-2hA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstItem="7sw-dH-eNh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="70Z-vH-P0E"/>
+                <constraint firstAttribute="trailing" secondItem="g7g-bu-cau" secondAttribute="trailing" id="Ai4-wj-pQM"/>
+                <constraint firstItem="g7g-bu-cau" firstAttribute="top" secondItem="7sw-dH-eNh" secondAttribute="bottom" id="Mm5-lW-SJW"/>
+                <constraint firstAttribute="trailing" secondItem="7sw-dH-eNh" secondAttribute="trailing" id="Nra-4E-RV2"/>
+                <constraint firstAttribute="bottom" secondItem="g7g-bu-cau" secondAttribute="bottom" id="cLV-uw-Si1"/>
+                <constraint firstItem="g7g-bu-cau" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="h41-AH-mf1"/>
+                <constraint firstItem="7sw-dH-eNh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rSR-ke-XNl"/>
+            </constraints>
+            <size key="customSize" width="92" height="107"/>
+            <connections>
+                <outlet property="jiuImg" destination="7sw-dH-eNh" id="EvF-SH-9Wo"/>
+                <outlet property="jiuNameLbl" destination="g7g-bu-cau" id="NU1-qb-C3K"/>
+            </connections>
+            <point key="canvasLocation" x="266" y="395"/>
+        </collectionViewCell>
+    </objects>
+</document>

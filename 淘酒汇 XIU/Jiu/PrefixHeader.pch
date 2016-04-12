@@ -1,0 +1,64 @@
+//
+//  PrefixHeader.pch
+//  Jiu
+//
+//  Created by 张熔冰 on 15/9/13.
+//  Copyright © 2015年 NTTDATA. All rights reserved.
+//
+
+#import <Availability.h>
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "UIViewExt.h"
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+
+
+
+
+#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define windowColor  [UIColor colorWithRed:0 green:0 blue:0 alpha:0.2]
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+
+#define kMainColor [UIColor colorWithRed:123/255.f green:0.f blue:13/255.f alpha:1]
+
+#define kTabbarHeight self.tabBarController.tabBar.frame.size.height
+
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+#define kProportionX kScreenWidth/320
+#define kProportionY kScreenHeight/480
+
+#define kHOME_RightScrollViewWidth kProportionX*80
+#define kHOME_ADPageViewHeight kProportionY*112
+
+#define kHOME_TableViewCellHeight kProportionY*180
+
+#define kCommodityViewHeight 270.f
+#define kLableHeight 21.f
+
+#define kSildeActivateDistance 50.f  //滑动触发翻页的距离
+#define kPullFreshViewHeight 22.f //”更多精彩“的高度
+
+#define VW (self.view.frame.size.width)
+#define VH (self.view.frame.size.height)
+
+
+
+
+
+#endif /* PrefixHeader_pch */
+
+

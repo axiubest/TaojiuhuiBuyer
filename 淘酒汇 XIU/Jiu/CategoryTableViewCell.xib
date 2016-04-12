@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CategoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QX6-bl-IMG">
+                        <rect key="frame" x="8" y="8" width="90" height="64"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="63.5" id="T8t-TJ-Ed8"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qlX-dy-9Na">
+                        <rect key="frame" x="115" y="8" width="90" height="64"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="63.5" id="FIV-D5-Xq1"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iV3-Ck-czp">
+                        <rect key="frame" x="222" y="8" width="90" height="64"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="63.5" id="E9d-zx-AXv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QX6-bl-IMG" firstAttribute="width" secondItem="qlX-dy-9Na" secondAttribute="width" id="3CX-7u-rpG"/>
+                    <constraint firstItem="qlX-dy-9Na" firstAttribute="leading" secondItem="QX6-bl-IMG" secondAttribute="trailing" constant="17" id="8UH-Zf-rro"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="QX6-bl-IMG" secondAttribute="leading" id="Elq-zV-NZW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iV3-Ck-czp" secondAttribute="trailing" id="KRg-Ks-9cL"/>
+                    <constraint firstItem="QX6-bl-IMG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PMe-Wp-08d"/>
+                    <constraint firstItem="iV3-Ck-czp" firstAttribute="centerY" secondItem="qlX-dy-9Na" secondAttribute="centerY" id="RZT-o7-b6P"/>
+                    <constraint firstItem="qlX-dy-9Na" firstAttribute="centerY" secondItem="QX6-bl-IMG" secondAttribute="centerY" id="mEv-ZD-fBh"/>
+                    <constraint firstItem="qlX-dy-9Na" firstAttribute="width" secondItem="iV3-Ck-czp" secondAttribute="width" id="x8O-Gd-Nas"/>
+                    <constraint firstItem="iV3-Ck-czp" firstAttribute="leading" secondItem="qlX-dy-9Na" secondAttribute="trailing" constant="17" id="zke-RX-CQj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="277" y="166"/>
+        </tableViewCell>
+    </objects>
+</document>

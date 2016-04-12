@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationViewController">
+            <connections>
+                <outlet property="NowLocation" destination="AvR-sj-zdk" id="4xo-BB-gqu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cyz-IQ-o0P">
+                    <rect key="frame" x="0.0" y="64" width="375" height="53"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvR-sj-zdk">
+                            <rect key="frame" x="14" y="0.0" width="345" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="53" id="GMK-ZF-YDQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="点击选择当前位置">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="chickedNowLocationBtn:" destination="-1" eventType="touchUpInside" id="RTV-Gc-K1B"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="6vl-UJ-WQR"/>
+                        <constraint firstAttribute="trailing" secondItem="AvR-sj-zdk" secondAttribute="trailing" id="qlP-D7-CcO"/>
+                        <constraint firstItem="AvR-sj-zdk" firstAttribute="leading" secondItem="Cyz-IQ-o0P" secondAttribute="leading" id="u7E-vb-znG"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAp-So-3bb">
+                    <rect key="frame" x="0.0" y="125" width="375" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="zSA-64-Xdg"/>
+                    </constraints>
+                    <state key="normal" title="点击定位当前地址" image="location1">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="pressLocatedBtn:" destination="-1" eventType="touchUpInside" id="cLj-oM-TL1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Cyz-IQ-o0P" secondAttribute="trailing" id="J3N-Dc-gWk"/>
+                <constraint firstItem="YAp-So-3bb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eRf-8d-YSG"/>
+                <constraint firstItem="Cyz-IQ-o0P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f0v-TF-Bux"/>
+                <constraint firstItem="AvR-sj-zdk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="pmc-ii-4nN"/>
+                <constraint firstAttribute="trailing" secondItem="YAp-So-3bb" secondAttribute="trailing" id="q9i-J8-Oob"/>
+                <constraint firstItem="Cyz-IQ-o0P" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="tld-pu-TV0"/>
+                <constraint firstItem="YAp-So-3bb" firstAttribute="top" secondItem="Cyz-IQ-o0P" secondAttribute="bottom" constant="8" id="zhr-IZ-Odi"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="545.5" y="301.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="location1" width="32" height="32"/>
+    </resources>
+</document>

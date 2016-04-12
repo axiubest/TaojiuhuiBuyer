@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A216g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeTableViewHeaderViewController">
+            <connections>
+                <outlet property="commodityImg1" destination="ZEg-gm-ok3" id="dtg-un-KD1"/>
+                <outlet property="commodityImg2" destination="Q3P-gH-i3u" id="ET4-fD-B9k"/>
+                <outlet property="commodityImg3" destination="DN6-kU-cB1" id="ucZ-Fc-bSg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="122"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J1G-dz-7Ip" userLabel="v">
+                    <rect key="frame" x="300" y="0.0" width="1" height="122"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="oQS-or-itR"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrs-At-SsN" userLabel="h">
+                    <rect key="frame" x="300" y="61" width="300" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="pM5-PS-DMi"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="commodity1" translatesAutoresizingMaskIntoConstraints="NO" id="DN6-kU-cB1">
+                    <rect key="frame" x="309" y="62" width="291" height="59"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="commodity2" translatesAutoresizingMaskIntoConstraints="NO" id="Q3P-gH-i3u">
+                    <rect key="frame" x="309" y="0.0" width="291" height="60"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="commodity" translatesAutoresizingMaskIntoConstraints="NO" id="ZEg-gm-ok3">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="122"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovZ-Ld-VRO">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="121"/>
+                    <connections>
+                        <action selector="pressCommodity1:" destination="-1" eventType="touchUpInside" id="35S-Y1-Bk1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZEg-gm-ok3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="08e-vW-n5V"/>
+                <constraint firstItem="J1G-dz-7Ip" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1NC-io-AGO"/>
+                <constraint firstItem="J1G-dz-7Ip" firstAttribute="leading" secondItem="ZEg-gm-ok3" secondAttribute="trailing" id="2qV-gB-DEw"/>
+                <constraint firstItem="hrs-At-SsN" firstAttribute="leading" secondItem="J1G-dz-7Ip" secondAttribute="trailing" constant="-1" id="3co-vI-aqk"/>
+                <constraint firstItem="hrs-At-SsN" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="4PJ-bF-XkY"/>
+                <constraint firstAttribute="trailing" secondItem="hrs-At-SsN" secondAttribute="trailing" id="5qa-DP-8Ee"/>
+                <constraint firstItem="DN6-kU-cB1" firstAttribute="leading" secondItem="J1G-dz-7Ip" secondAttribute="trailing" constant="8" id="ADf-0U-hb0"/>
+                <constraint firstItem="hrs-At-SsN" firstAttribute="top" secondItem="Q3P-gH-i3u" secondAttribute="bottom" constant="1" id="ANV-Vi-XN2"/>
+                <constraint firstAttribute="bottom" secondItem="ZEg-gm-ok3" secondAttribute="bottom" id="BMD-vr-iYx"/>
+                <constraint firstAttribute="trailing" secondItem="Q3P-gH-i3u" secondAttribute="trailing" id="Fde-sd-MMJ"/>
+                <constraint firstItem="DN6-kU-cB1" firstAttribute="top" secondItem="hrs-At-SsN" secondAttribute="bottom" id="Hoz-pL-H2P"/>
+                <constraint firstItem="Q3P-gH-i3u" firstAttribute="leading" secondItem="J1G-dz-7Ip" secondAttribute="trailing" constant="8" id="Mm2-e0-cer"/>
+                <constraint firstAttribute="bottom" secondItem="DN6-kU-cB1" secondAttribute="bottom" constant="1" id="S9C-c9-9F0"/>
+                <constraint firstAttribute="trailing" secondItem="DN6-kU-cB1" secondAttribute="trailing" id="ffL-ZK-L2H"/>
+                <constraint firstItem="Q3P-gH-i3u" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="for-2x-WgF"/>
+                <constraint firstAttribute="bottom" secondItem="J1G-dz-7Ip" secondAttribute="bottom" id="gKh-aT-Ujm"/>
+                <constraint firstItem="ZEg-gm-ok3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jlS-Q5-FEn"/>
+                <constraint firstItem="J1G-dz-7Ip" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rJL-Wc-Je4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="273" y="379"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="commodity" width="230" height="231"/>
+        <image name="commodity1" width="168" height="168"/>
+        <image name="commodity2" width="168" height="168"/>
+    </resources>
+</document>

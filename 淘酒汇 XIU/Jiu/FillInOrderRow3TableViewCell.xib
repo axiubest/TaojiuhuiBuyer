@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FillInOrderRow3TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否需要发票" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yW7-aL-4uY">
+                        <rect key="frame" x="8" y="11" width="102" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="196-k6-sDy"/>
+                            <constraint firstAttribute="width" constant="102" id="4Qr-Hh-Nre"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIf-6N-WAq">
+                        <rect key="frame" x="322" y="5" width="33" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="33" id="3KQ-1t-sqX"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="check"/>
+                        <state key="selected" image="check-selected"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yW7-aL-4uY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2Pm-k8-s1E"/>
+                    <constraint firstItem="vIf-6N-WAq" firstAttribute="centerY" secondItem="yW7-aL-4uY" secondAttribute="centerY" id="BrZ-3a-cQm"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="yW7-aL-4uY" secondAttribute="leading" id="cW1-kM-LG2"/>
+                    <constraint firstItem="vIf-6N-WAq" firstAttribute="firstBaseline" secondItem="yW7-aL-4uY" secondAttribute="baseline" id="jeO-jn-fuW"/>
+                    <constraint firstItem="vIf-6N-WAq" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="oX4-Sc-iK4"/>
+                    <constraint firstItem="vIf-6N-WAq" firstAttribute="baseline" secondItem="yW7-aL-4uY" secondAttribute="baseline" id="y1c-cs-dMG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selectBtn" destination="vIf-6N-WAq" id="6Xc-fU-uDc"/>
+            </connections>
+            <point key="canvasLocation" x="239.5" y="270"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check" width="32" height="32"/>
+        <image name="check-selected" width="32" height="32"/>
+    </resources>
+</document>

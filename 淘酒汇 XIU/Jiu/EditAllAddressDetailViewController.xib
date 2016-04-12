@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditAllAddressDetailViewController">
+            <connections>
+                <outlet property="tableView" destination="P61-cc-i7e" id="ney-V9-yNG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="P61-cc-i7e">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Ebo-AM-kMX"/>
+                        <outlet property="delegate" destination="-1" id="ckZ-cs-R7V"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmP-Hc-Wc3">
+                    <rect key="frame" x="8" y="633" width="359" height="30"/>
+                    <color key="backgroundColor" red="0.72156862749999995" green="0.1137254902" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="确认修改">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="saveEdit:" destination="-1" eventType="touchUpInside" id="Iqa-28-L8V"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VmP-Hc-Wc3" secondAttribute="trailing" constant="8" id="HCe-oA-JPf"/>
+                <constraint firstItem="VmP-Hc-Wc3" firstAttribute="top" secondItem="P61-cc-i7e" secondAttribute="bottom" constant="10" id="HNq-RC-1vL"/>
+                <constraint firstItem="P61-cc-i7e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OWR-sM-ABs"/>
+                <constraint firstItem="P61-cc-i7e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PSw-91-Z4x"/>
+                <constraint firstAttribute="trailing" secondItem="P61-cc-i7e" secondAttribute="trailing" id="U2m-G5-70h"/>
+                <constraint firstItem="VmP-Hc-Wc3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="VIk-Ak-GVM"/>
+                <constraint firstItem="VmP-Hc-Wc3" firstAttribute="top" secondItem="P61-cc-i7e" secondAttribute="bottom" constant="10" id="don-7Z-3ae"/>
+                <constraint firstItem="P61-cc-i7e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gdc-Qv-4eY"/>
+                <constraint firstAttribute="bottom" secondItem="VmP-Hc-Wc3" secondAttribute="bottom" constant="4" id="sRj-Kc-MMv"/>
+                <constraint firstItem="P61-cc-i7e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uay-3b-k1c"/>
+                <constraint firstAttribute="trailing" secondItem="P61-cc-i7e" secondAttribute="trailing" id="wOi-ZQ-ZTV"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="198.5" y="162.5"/>
+        </view>
+    </objects>
+</document>
