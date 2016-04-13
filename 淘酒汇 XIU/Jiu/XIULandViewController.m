@@ -60,7 +60,6 @@
 //        根据返回结果判断是否注册，  如果返回code＝ 1，则为未注册，  需要注册
         
         _MD5Password = [self md5:_passwordLabel.text];
-        NSLog(@"%@🍎", _MD5Password);
         
                 MyCollectionModel *model = [[MyCollectionModel alloc] init];
                 model.userid = [responseObject objectForKey:@"userid"];

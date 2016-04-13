@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A216g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryViewController">
             <connections>
-                <outlet property="collectionView" destination="pGI-vh-vtA" id="lQO-hg-8q0"/>
                 <outlet property="scrollView" destination="2ZO-pl-WsS" id="KT1-AU-2Zd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="xiuTableView" destination="dZE-V2-LAS" id="KVb-XF-J1v"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -23,28 +23,22 @@
                         <constraint firstAttribute="width" constant="100" id="stB-lJ-SOQ"/>
                     </constraints>
                 </scrollView>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pGI-vh-vtA">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dZE-V2-LAS">
                     <rect key="frame" x="100" y="0.0" width="275" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bMu-Oe-oQw">
-                        <size key="itemSize" width="50" height="50"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="LEi-Bh-FB4"/>
-                        <outlet property="delegate" destination="-1" id="P9g-3m-c7T"/>
+                        <outlet property="dataSource" destination="-1" id="rbI-az-jeu"/>
+                        <outlet property="delegate" destination="-1" id="DS7-P4-Cwf"/>
                     </connections>
-                </collectionView>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="pGI-vh-vtA" secondAttribute="trailing" id="67Q-DB-luI"/>
-                <constraint firstAttribute="bottom" secondItem="pGI-vh-vtA" secondAttribute="bottom" id="6dQ-uU-Sy5"/>
-                <constraint firstItem="pGI-vh-vtA" firstAttribute="leading" secondItem="2ZO-pl-WsS" secondAttribute="trailing" id="OVR-UX-G8S"/>
-                <constraint firstItem="pGI-vh-vtA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dpI-em-cg5"/>
+                <constraint firstAttribute="bottom" secondItem="dZE-V2-LAS" secondAttribute="bottom" id="Awc-06-0uJ"/>
+                <constraint firstItem="dZE-V2-LAS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Jzn-NK-Wpn"/>
+                <constraint firstAttribute="trailing" secondItem="dZE-V2-LAS" secondAttribute="trailing" id="UbD-pA-mBt"/>
                 <constraint firstItem="2ZO-pl-WsS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="efh-gR-GLs"/>
+                <constraint firstItem="dZE-V2-LAS" firstAttribute="leading" secondItem="2ZO-pl-WsS" secondAttribute="trailing" id="hep-ek-WEc"/>
                 <constraint firstAttribute="bottom" secondItem="2ZO-pl-WsS" secondAttribute="bottom" id="vFt-EA-Rhi"/>
                 <constraint firstItem="2ZO-pl-WsS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zm0-EV-LhW"/>
             </constraints>

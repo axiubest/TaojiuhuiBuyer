@@ -16,7 +16,7 @@
 
 @interface CategoryViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UITableView *xiuTableView;
 
 @property(nonatomic, strong) NSArray* tableData;
 @end

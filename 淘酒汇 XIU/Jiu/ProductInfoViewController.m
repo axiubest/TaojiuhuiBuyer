@@ -132,7 +132,7 @@ wrong
     [tabBar addSubview:shopChartBtn];
     
     UIButton* addChartBtn = [[UIButton alloc]initWithFrame:CGRectMake(btnWidth*2, 0, btnWidth, 54)];
-    [addChartBtn setTitle:@"加入购物车" forState:UIControlStateNormal];
+    [addChartBtn setTitle:@"购买" forState:UIControlStateNormal];
     [addChartBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     addChartBtn.backgroundColor = [UIColor redColor];
     [addChartBtn addTarget:self action:@selector(pressAddChartBtn:) forControlEvents:UIControlEventTouchUpInside];

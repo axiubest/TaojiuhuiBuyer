@@ -146,6 +146,8 @@
 		58C97E131BD6091F0060504D /* UISearchBar+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C97E121BD6091F0060504D /* UISearchBar+Addition.m */; };
 		58C97E1B1BD6827B0060504D /* FillInOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C97E191BD6827B0060504D /* FillInOrderViewController.m */; };
 		58C97E1C1BD6827B0060504D /* FillInOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C97E1A1BD6827B0060504D /* FillInOrderViewController.xib */; };
+		71A73A011CBE0EA4005776A7 /* XIUCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A739FF1CBE0EA4005776A7 /* XIUCategoryTableViewCell.m */; };
+		71A73A021CBE0EA4005776A7 /* XIUCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A73A001CBE0EA4005776A7 /* XIUCategoryTableViewCell.xib */; };
 		A3909148AB836CB855F63DAC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C2D64634F9F3FA22667D8F /* libPods.a */; };
 		E5019D9A1C3ACD1500BB347A /* GetDetailDataOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = E5019D991C3ACD1500BB347A /* GetDetailDataOperator.m */; };
 		E5019D9D1C3BF73E00BB347A /* GetNowTime.m in Sources */ = {isa = PBXBuildFile; fileRef = E5019D9C1C3BF73E00BB347A /* GetNowTime.m */; };
@@ -414,8 +416,6 @@
 		E52290A91C4F1BA40070CF9C /* GetSearchOpeartor.m in Sources */ = {isa = PBXBuildFile; fileRef = E52290A81C4F1BA40070CF9C /* GetSearchOpeartor.m */; };
 		E52721671BE729BC00413DC2 /* CatagoryJiuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E52721661BE729BC00413DC2 /* CatagoryJiuModel.m */; };
 		E527216A1BE72B3100413DC2 /* GetCategoryOpetator.m in Sources */ = {isa = PBXBuildFile; fileRef = E52721691BE72B3100413DC2 /* GetCategoryOpetator.m */; };
-		E527216E1BE74CC700413DC2 /* CategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E527216C1BE74CC700413DC2 /* CategoryCollectionViewCell.m */; };
-		E527216F1BE74CC700413DC2 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E527216D1BE74CC700413DC2 /* CategoryCollectionViewCell.xib */; };
 		E528BA441C54F71500D65A15 /* citys.db in Resources */ = {isa = PBXBuildFile; fileRef = E528BA431C54F71500D65A15 /* citys.db */; };
 		E52C21621C0B233700515482 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E52C21611C0B233700515482 /* AlipaySDK.bundle */; };
 		E52C21641C0B234100515482 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52C21631C0B234100515482 /* AlipaySDK.framework */; };
@@ -760,6 +760,9 @@
 		58C97E181BD6827B0060504D /* FillInOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FillInOrderViewController.h; sourceTree = "<group>"; };
 		58C97E191BD6827B0060504D /* FillInOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FillInOrderViewController.m; sourceTree = "<group>"; };
 		58C97E1A1BD6827B0060504D /* FillInOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FillInOrderViewController.xib; sourceTree = "<group>"; };
+		71A739FE1CBE0EA4005776A7 /* XIUCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIUCategoryTableViewCell.h; sourceTree = "<group>"; };
+		71A739FF1CBE0EA4005776A7 /* XIUCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XIUCategoryTableViewCell.m; sourceTree = "<group>"; };
+		71A73A001CBE0EA4005776A7 /* XIUCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIUCategoryTableViewCell.xib; sourceTree = "<group>"; };
 		C9C2D64634F9F3FA22667D8F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C0B9AA738AD3CEB21FFA64 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E5019D981C3ACD1500BB347A /* GetDetailDataOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetDetailDataOperator.h; path = Jiu/GetDetailDataOperator.h; sourceTree = SOURCE_ROOT; };
@@ -1303,9 +1306,6 @@
 		E52721661BE729BC00413DC2 /* CatagoryJiuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatagoryJiuModel.m; sourceTree = "<group>"; };
 		E52721681BE72B3100413DC2 /* GetCategoryOpetator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetCategoryOpetator.h; path = Jiu/GetCategoryOpetator.h; sourceTree = SOURCE_ROOT; };
 		E52721691BE72B3100413DC2 /* GetCategoryOpetator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetCategoryOpetator.m; path = Jiu/GetCategoryOpetator.m; sourceTree = SOURCE_ROOT; };
-		E527216B1BE74CC700413DC2 /* CategoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryCollectionViewCell.h; sourceTree = "<group>"; };
-		E527216C1BE74CC700413DC2 /* CategoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCollectionViewCell.m; sourceTree = "<group>"; };
-		E527216D1BE74CC700413DC2 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		E528BA431C54F71500D65A15 /* citys.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = citys.db; path = ../../citys.db; sourceTree = "<group>"; };
 		E52C21611C0B233700515482 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		E52C21631C0B234100515482 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
@@ -1931,9 +1931,9 @@
 				36C50D091BD71E330071929D /* CommodityListViewController.h */,
 				36C50D0A1BD71E330071929D /* CommodityListViewController.m */,
 				36C50D0B1BD71E330071929D /* CommodityListViewController.xib */,
-				E527216B1BE74CC700413DC2 /* CategoryCollectionViewCell.h */,
-				E527216C1BE74CC700413DC2 /* CategoryCollectionViewCell.m */,
-				E527216D1BE74CC700413DC2 /* CategoryCollectionViewCell.xib */,
+				71A739FE1CBE0EA4005776A7 /* XIUCategoryTableViewCell.h */,
+				71A739FF1CBE0EA4005776A7 /* XIUCategoryTableViewCell.m */,
+				71A73A001CBE0EA4005776A7 /* XIUCategoryTableViewCell.xib */,
 			);
 			name = SubViews;
 			sourceTree = "<group>";
@@ -3514,6 +3514,7 @@
 				589FEF3C1BD7D3D700628146 /* RightMenuViewController.xib in Resources */,
 				36C55A6D1BA824F8006200FC /* LocationViewController.xib in Resources */,
 				58C18C9C1BA84746009E4101 /* AddAddressViewController.xib in Resources */,
+				71A73A021CBE0EA4005776A7 /* XIUCategoryTableViewCell.xib in Resources */,
 				E56883751C58B507007BBF7D /* PayWayPickerView.xib in Resources */,
 				E5E7E44A1BEC91300029DA6F /* HomeTableViewCell1.xib in Resources */,
 				5893C76D1BA494F3006A0B6B /* MainNavController.xib in Resources */,
@@ -3531,7 +3532,6 @@
 				58C18CA21BA84803009E4101 /* AddressTableViewCell.xib in Resources */,
 				589FEF4B1BD7F3F900628146 /* PublicListViewController.xib in Resources */,
 				E53C1E161BFECC03007A226A /* EditAllAddressDetailViewController.xib in Resources */,
-				E527216F1BE74CC700413DC2 /* CategoryCollectionViewCell.xib in Resources */,
 				E57B84B11C71B70D00444B90 /* ShiftAddressTableViewCell.xib in Resources */,
 				58C18CA71BA85022009E4101 /* EditAddressViewController.xib in Resources */,
 				36C55A501BA81348006200FC /* MyOrderViewController.xib in Resources */,
@@ -3642,6 +3642,7 @@
 				E522909F1C4E72DB0070CF9C /* FMDatabase.m in Sources */,
 				585AC4871BD5376600A1477B /* UILabel+Addition.m in Sources */,
 				E5060CE61C0FE75200175A1A /* WXApiManager.m in Sources */,
+				71A73A011CBE0EA4005776A7 /* XIUCategoryTableViewCell.m in Sources */,
 				3616840F1BB3B7F80051D5C8 /* NetworkingManager.m in Sources */,
 				E5019DA21C3CB18900BB347A /* GetLocationOperator.m in Sources */,
 				E590B18A1BE2440900DCFDEB /* SignUpOperator.m in Sources */,
@@ -3861,7 +3862,6 @@
 				E515D74D1C05F42D00FEE700 /* ZXRSSPair.m in Sources */,
 				E515D7341C05F42D00FEE700 /* ZXAI01320xDecoder.m in Sources */,
 				E52290911C4E71C50070CF9C /* CityPickerView.m in Sources */,
-				E527216E1BE74CC700413DC2 /* CategoryCollectionViewCell.m in Sources */,
 				E515D72D1C05F42D00FEE700 /* ZXMaxiCodeDecodedBitStreamParser.m in Sources */,
 				E55AD70E1C06A7CB0026E267 /* GetGoodsInfoOperator.m in Sources */,
 				E515D7571C05F42D00FEE700 /* ZXEAN13Writer.m in Sources */,
@@ -4113,8 +4113,8 @@
 			baseConfigurationReference = E2C0B9AA738AD3CEB21FFA64 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: wang jiarui (GB6KC3Z5N2)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: wang jiarui (GB6KC3Z5N2)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -4139,7 +4139,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = www.taojiuhui.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8bdb7b43-6204-4630-863a-46b422512edf";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
@@ -4150,8 +4150,8 @@
 			baseConfigurationReference = 09EE12151B635F9766ABB493 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: wang jiarui (GB6KC3Z5N2)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: wang jiarui (GB6KC3Z5N2)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -4176,7 +4176,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = www.taojiuhui.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8bdb7b43-6204-4630-863a-46b422512edf";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
